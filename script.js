@@ -177,7 +177,10 @@ function calcDot(e) {
 
 function calcPercent(e) {
   if (!(isNaN(text.innerText))) {
+    let ans = Number(text.innerText) / 100;
     text.innerText = text.innerText + '%';
+    result.innerText = ans;
+    text.innerText = "";
   }
 }
 
